@@ -89,7 +89,7 @@ global.gp1 = 'https://chat.whatsapp.com/FrED40x2QDt2YWNL3Kqt7g'
 global.comunidad1 = 'https://chat.whatsapp.com/KMaADSQKeVhEciKrUFxTdn'
 global.channel = 'https://whatsapp.com/channel/0029Vb6stJ2HwXb40WXDyn1U'
 global.channel2 = 'https://whatsapp.com/channel/0029Vb6stJ2HwXb40WXDyn1U'
-global.md = 'https://github.com/rufinofelipe/Yuno-bot-'
+global.md = 'https://github.com/rufinofelipe/waguri-bot'
 global.correo = 'rufinofelipe495@gmail.com' 
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
