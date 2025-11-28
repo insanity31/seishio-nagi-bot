@@ -35,20 +35,20 @@ global.libreria = 'Baileys'
 global.baileys = 'V 6.7.17' 
 global.vs = '2.2.5'
 global.nameqr = '⚽️ Isagi-Yoichi-MD ⚽️'
-global.namebot = 'Yuno bot'
+global.namebot = 'Waguri-Bot-MD'
 global.sessions = 'Sessions'
 global.jadi = 'JadiBots' 
 
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.packname = '⚽️ 𝐼𝑆𝐴𝐺𝐼 𝑌𝑂𝐼𝐶𝐻𝐼 𝐵𝑂𝑇 ⚽️'
+global.packname = 'Waguri-Bot-MD'
 global.botname = 'Yuno bot'
 global.wm = '⚽️◟𝓘𝓼𝓪𝓰𝓲 𝓨𝓸𝓲𝓬𝓱𝓲◞⚽️'
 global.author = '© DuarteXV'
 global.dev = '© 🄿🄾🅆🄴🅁🄴🄳 Rufino'
 global.textbot = '🏆Isagi Yoichi, Un delantero que transforma cada partido en una partida de ajedrez con su mente letal. ♟️⚽🏆'
-global.etiqueta = '⚽️DuarteXV⚽️'
+global.etiqueta = 'Rufino✝️'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -86,10 +86,10 @@ global.APIs = {
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.gp1 = 'https://chat.whatsapp.com/FrED40x2QDt2YWNL3Kqt7g'
-global.comunidad1 = 'https://chat.whatsapp.com/FrED40x2QDt2YWNL3Kqt7g'
+global.comunidad1 = 'https://chat.whatsapp.com/KMaADSQKeVhEciKrUFxTdn'
 global.channel = 'https://whatsapp.com/channel/0029Vb6stJ2HwXb40WXDyn1U'
 global.channel2 = 'https://whatsapp.com/channel/0029Vb6stJ2HwXb40WXDyn1U'
-global.md = 'https://github.com/Brauliovh3/HATSUNE-MIKU'
+global.md = 'https://github.com/rufinofelipe/Yuno-bot-'
 global.correo = 'rufinofelipe495@gmail.com' 
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
