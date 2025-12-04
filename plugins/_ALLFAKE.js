@@ -8,17 +8,17 @@ const { generateWAMMessageFromContent, prepareWAMessageMedia, proto } = pkg
 
 var handler = m => m
 handler.all = async function (m, { conn }) {
-  
+
   if (!conn) {
     console.log('⚠️ conn no está disponible')
     return
   }
-  
+
   if (!conn.user) {
     console.log('⚠️ conn.user aún no está disponible, esperando...')
     return
   }
-  
+
   if (!conn.user.jid) {
     console.log('⚠️ conn.user.jid aún no está disponible, esperando...')
     return
@@ -113,7 +113,7 @@ handler.all = async function (m, { conn }) {
         newsletterName: channelRD.name
       },
       externalAdReply: { 
-        showAdAttribution: true,
+        showAdAttribution: false,
         title: "Pack",
         body: "Dev",
         previewType: "PHOTO",
@@ -137,10 +137,9 @@ async function getRandomChannel() {
       return {
         id: '120363423258391692@newsletter',
         name: '🌸❖𝗪𝗔𝗚𝗨𝗥𝗜 𝗕𝗢𝗧❖🌸'
-
       }
     }
-    
+
     let randomIndex = Math.floor(Math.random() * global.canalIdM.length)
     return {
       id: global.canalIdM[randomIndex],
@@ -153,3 +152,4 @@ async function getRandomChannel() {
       name: '⟡ 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐂𝐞𝐧𝐭𝐞𝐫 ⟡'
     }
   }
+}
