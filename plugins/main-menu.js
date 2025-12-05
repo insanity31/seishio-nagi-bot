@@ -8,6 +8,8 @@ const menuImage = 'https://files.catbox.moe/4c43sa.png'
 let handler = async (m, { conn }) => {
   let mentionedJid = m.mentionedJid
   let userId = mentionedJid && mentionedJid[0] ? mentionedJid[0] : m.sender
+  let user = global.db.data.users[userId]
+  let name = conn.getName(userId)
   let totalreg = Object.keys(global.db.data.users).length
   let totalCommands = Object.values(global.plugins).filter((v) => v.help && v.tags).length
   const uptime = clockString(process.uptime() * 1000)
@@ -39,12 +41,11 @@ let handler = async (m, { conn }) => {
 ✿ /setcurrency
 ✿ /setname
 ✿ /setprimary
-✿/tag
-✿/play
-✿/play2
-✿/invocar
-✿/sticker
-
+✿ /tag
+✿ /play
+✿ /play2
+✿ /invocar
+✿ /sticker
 
 ✧˖°⊹ ─────────────── ⊹°˖✧
 `.trim()
@@ -76,7 +77,7 @@ let handler = async (m, { conn }) => {
 
 handler.help = ['menu']
 handler.tags = ['main']
-handler.command = ['menu', 'menú', 'help']
+handler.command = ['menu', 'menú', 'help', 'menucompleto', 'comandos', 'helpcompleto', 'allmenu', 'menuall', 'ayudacompleto']
 
 export default handler
 
