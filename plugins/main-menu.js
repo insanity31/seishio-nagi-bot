@@ -29,7 +29,7 @@ let handler = async (m, { conn }) => {
 ✿ /quitar prefijo
 ✿ /update
 ✿ /setprefijo
-✿ /sockets activos
+✿ /bots
 ✿ /delprimary 
 ✿ /delprimary2
 ✿ /leave
@@ -39,6 +39,10 @@ let handler = async (m, { conn }) => {
 ✿ /setcurrency
 ✿ /setname
 ✿ /setprimary
+✿/tag
+✿/play
+✿/play2
+
 
 ✧˖°⊹ ─────────────── ⊹°˖✧
 `.trim()
