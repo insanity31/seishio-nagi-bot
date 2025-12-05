@@ -5,9 +5,9 @@ let handler = async (m, { conn }) => {
 
     // Números de los creadores con nombres personalizados
     let creators = [
-        { number: '51933000214', name: 'Creador 1' },
-        { number: '240222646582', name: 'Creador 2' },
-        { number: '573244642273', name: 'Creador 3' }
+        { number: '240222646582', name: 'Creador del bot' },
+        { number: '51933000214', name: 'Desarrollador principal},
+        { number: '573244642273', name: 'Desarrollador y editor}
     ];
 
     // Crear contactos para cada creador
