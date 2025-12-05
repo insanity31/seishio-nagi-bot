@@ -43,6 +43,7 @@ let handler = async (m, { conn }) => {
 ✿/play
 ✿/play2
 ✿/invocar
+✿/sticker
 
 
 ✧˖°⊹ ─────────────── ⊹°˖✧
