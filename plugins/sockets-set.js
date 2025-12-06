@@ -41,7 +41,7 @@ let handler = async (m, { conn }) => {
 
   // lectura de config de sesión (JadiBots/<botId>/config.json)
   const cfg = readSessionConfig(conn)
-  const nombreBot = cfg.name || cfg.currency || cfg?.botname || 'Yotsuba Nakano' // prefer name, fallback currency or botname
+  const nombreBot = cfg.name || cfg.currency || cfg?.botname || 'Waguri Bot' // prefer name, fallback currency or botname
   const currency = cfg.currency || 'Coins'
   const bannerUrl = cfg.banner || 'https://qu.ax/zRNgk.jpg'
 
