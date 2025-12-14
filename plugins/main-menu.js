@@ -56,13 +56,15 @@ let handler = async (m, { conn }) => {
     caption: txt,
     contextInfo: {
       mentionedJid: [m.sender, userId],
-      isForwarded: true,
-      forwardedNewsletterMessageInfo: {
-        newsletterJid: channelId,
-        newsletterName: channelName,
-        serverMessageId: -1,
-      },
-      forwardingScore: 1
+      forwardingScore: 1,
+      externalAdReply: {
+        title: botname,
+        body: dev,
+        thumbnailUrl: menuImage,
+        sourceUrl: redes,
+        mediaType: 1,
+        renderLargerThumbnail: true
+      }
     },
   }, { quoted: m })
 }
