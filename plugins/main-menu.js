@@ -52,13 +52,12 @@ let handler = async (m, { conn }) => {
 `.trim()
 
   await conn.sendMessage(m.chat, {
-    image: { url: menuImage },
-    caption: txt,
+    text: txt,
     contextInfo: {
       mentionedJid: [m.sender, userId],
       forwardingScore: 1,
       externalAdReply: {
-        title: botname,
+        title: channelName,
         body: dev,
         thumbnailUrl: menuImage,
         sourceUrl: redes,
