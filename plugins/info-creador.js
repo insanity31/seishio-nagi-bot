@@ -16,7 +16,7 @@ let handler = async (m, { conn }) => {
             description: 'Encargado del desarrollo técnico'
         },
         { 
-            number: '573244642273', 
+            number: '573135180876', 
             name: '🎨 Desarrollador y Editor',
             description: 'Desarrollo y diseño del bot'
         }
