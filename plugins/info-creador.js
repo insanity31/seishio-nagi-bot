@@ -36,23 +36,13 @@ END:VCARD`.trim();
         return { vcard };
     });
 
-    // Enviar todos los contactos juntos con un mensaje informativo
+   
     await conn.sendMessage(m.chat, {
         contacts: {
             displayName: `👥 Equipo de Desarrollo`,
             contacts: contacts
         }
     }, { quoted: m });
-    
-    // Agregar un mensaje explicativo
-    let infoText = `*📞 CONTACTOS DEL EQUIPO*\n\n` +
-                  `Aquí tienes los contactos del equipo de desarrollo:\n` +
-                  `• *${creators[0].name}* - ${creators[0].description}\n` +
-                  `• *${creators[1].name}* - ${creators[1].description}\n` +
-                  `• *${creators[2].name}* - ${creators[2].description}\n\n` +
-                  `_Guarda los contactos para comunicación directa_`;
-    
-    await m.reply(infoText);
 }
 
 handler.help = ["owner", "creador", "dueño", "equipo", "desarrolladores"];
