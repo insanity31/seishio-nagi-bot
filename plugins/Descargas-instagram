@@ -16,7 +16,7 @@ const handler = async (m, { args, conn }) => {
     await m.react('❤️');
   } catch (e) {
     await m.react('🌸');
-    return conn.reply(m.chat, `🌸 ¡Error en la jugada! Ocurrió un problema en el campo. ¡Inténtalo de nuevo! 🔥`, m, rcanal);
+    return conn.reply(m.chat, `🌸 ¡Error! Ocurrió un problema  ¡Inténtalo de nuevo! 🔥`, m, rcanal);
   }
 };
 
@@ -25,6 +25,5 @@ handler.tags = ['descargas'];
 handler.help = ['instagram', 'ig'];
 handler.group = true;
 handler.register = true;
-handler.coin = 2;
 
 export default handler;
