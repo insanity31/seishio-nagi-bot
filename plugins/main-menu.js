@@ -25,6 +25,7 @@ let handler = async (m, { conn }) => {
 
 ❀ /autoadmin
 ❀ /ping
+> comprueba el tiempo de respuesta 
 ❀/demote
 ❀ /join
 ❀/quitar prefijo
@@ -87,3 +88,4 @@ function clockString(ms) {
   return `${hours}h ${minutes}m ${seconds}s`
 
 }
+
