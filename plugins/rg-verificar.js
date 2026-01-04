@@ -38,7 +38,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
 
   let sn = createHash('md5').update(m.sender).digest('hex').slice(0, 20)
 
-  let regbot = `🌟 *¡REGISTRO EXITOSO!* 🌟\n\n👤 *Nombre:* ${name}\n🎂 *Edad:* ${age} años\n🆔 *ID:* ${sn}\n\n🌸 *¡Bienvenido/a al campo de Isagi Yoichi!* 🌸\n\n🎁 *Recompensas iniciales:*\n💰 +39 monedas\n✨ +300 XP\n🎟️ +20 tickets`
+  let regbot = `🌟 *¡REGISTRO EXITOSO!* 🌟\n\n👤 *Nombre:* ${name}\n🎂 *Edad:* ${age} años\n🆔 *ID:* ${sn}\n\n🌸 *¡Bienvenido/!* 🌸\n\n🎁 *Recompensas iniciales:*\n💰 +39 monedas\n✨ +300 XP\n🎟️ +20 tickets`
 
   await m.react('🌸')
 
