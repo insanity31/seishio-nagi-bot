@@ -126,6 +126,8 @@ let handler = async (m, { conn }) => {
 > habla con copilot 
 ❀ /gemini  
 > habla con gemini
+❀ /GPT
+> habla con ChatGPT 
      🌸 *DESCARGAS* 🌸
 ❀ /play  
 > Descargar música desde YouTube  
