@@ -30,6 +30,6 @@ let handler = async (m, { conn }) => {
   }, { quoted: m })
 }
 
-handler.help = ['top', 'leaderboard', 'ranking']
+handler.help = ['rank', 'leaderboard', 'ranking']
 handler.tags = ['rpg']
 handler.command = /^(top|ranking|leaderboard|mejores)$/i
