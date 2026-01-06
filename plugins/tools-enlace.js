@@ -1,5 +1,5 @@
 var handler = async (m, { conn, args }) => {
-    let communityLink = 'https://chat.whatsapp.com/LRQrf8vv50BDtwN8JWfhrX'
+    let communityLink = 'https://chat.whatsapp.com/EFUkB3vLyAzAc4ZQzLabsp'
     let channelLink = 'https://whatsapp.com/channel/0029VbBUHyQCsU9IpJ0oIO2i'
     
     let message = `🌸 *𝗪𝗔𝗚𝗨𝗥𝗜 𝗕𝗢𝗧 🌸*\n\n` +
