@@ -19,6 +19,7 @@ global.owner = [
 ['573135180876', 'DuarteXV', true],
 ['240222646582', 'Rufino ✝️', true],
 ['51933000214', 'Rufino ✝️', true],
+['584244733684', 'insaity♱卐×፝֟͜×', true],
 
   
 // <-- Número @lid -->
@@ -36,26 +37,26 @@ global.prems = []
 global.libreria = 'Baileys'
 global.baileys = 'V 6.7.17' 
 global.vs = '2.2.5'
-global.nameqr = '🌷 Waguri-Bot-MD 🌷'
-global.namebot = 'W A G U R I B O T'
+global.nameqr = '⚽ seishiro nagi ⚽'
+global.namebot = 'N A G I B O T'
 global.sessions = 'Sessions'
 global.jadi = 'JadiBots' 
 
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.packname = 'Waguri-Bot-MD'
-global.botname = 'Waguri bot'
-global.wm = '💗𝕎𝕒𝕘𝕦𝕣𝕚 𝔹𝕠𝕥💗'
+global.packname = 'seishiro-nagi-Bot-MD'
+global.botname = 'seishiro nagi bot'
+global.wm =  '⚽ꜱᴇɪꜱʜɪʀᴏ ɴᴀɢɪ bot⚽'
 global.author = '© Rufino'
 global.dev = '© Powered by Rufino'
 global.banner = 'https://raw.githubusercontent.com/ANDERSONARRUE/Img.2/main/upload_1764986888437.jpg'
-global.textbot = 'Soy Waguri Bot 🌸, un alma amable y serena.'
-global.etiqueta = 'Waguri-Bot-MD'
+global.textbot = 'Soy seishiro nagi Bot ⚽, un jugador perezoso y bueno.'
+global.etiqueta = 'nagi-Bot-MD'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.moneda = 'Waguricoins'
+global.moneda = 'blue lock points'
 global.welcom1 = '! Bienvenido a este jardin! 🌷 \n✨ Soy Waguri Bot✨ \n🌷 Edita este mensaje con setwelcome 🌸'
 global.welcom2 ='Waguri Bot te despide con calma,Que tu camino florezca en sabiduría. 🌸! \n🌸 Edita este mensaje con setbye 🌸'
 global.avatar = 'https://raw.githubusercontent.com/ANDERSONARRUE/Img.2/main/upload_1764986888437.jpg'
@@ -87,12 +88,12 @@ global.APIs = {
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.gp1 = 'https://chat.whatsapp.com/FrED40x2QDt2YWNL3Kqt7g'
-global.comunidad1 = 'https://chat.whatsapp.com/KMaADSQKeVhEciKrUFxTdn'
-global.channel = 'https://whatsapp.com/channel/0029Vb6stJ2HwXb40WXDyn1U'
-global.channel2 = 'https://whatsapp.com/channel/0029Vb6stJ2HwXb40WXDyn1U'
+global.gp1 = 'https://whatsapp.com/channel/0029Vb73g1r1NCrTbefbFQ2T/975'
+global.comunidad1 = 'https://chat.whatsapp.com/GPfABUmCuVN2Qu1d1PPcBY'
+global.channel = 'https://whatsapp.com/channel/0029Vb73g1r1NCrTbefbFQ2T'
+global.channel2 = 'https://whatsapp.com/channel/0029VbC9Pqi2975Bx7ISC62n'
 global.md = 'https://github.com/rufinofelipe/waguri-bot'
-global.correo = 'rufinofelipe495@gmail.com' 
+global.correo = 'insnitybanez@gmail.com' 
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -103,7 +104,7 @@ global.rcanal = {
     forwardedNewsletterMessageInfo: { 
       newsletterJid: "120363423258391692@newsletter", 
       serverMessageId: 100, 
-      newsletterName: "🌸WAGURI-BOT-MD"
+      newsletterName: "⚽ SEISHIR-NAGI-BOT-MD"
     }
   }
 }
