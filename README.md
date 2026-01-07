@@ -1,6 +1,6 @@
 # nagi Bot ⚽
 
-![nagi Bot Banner](https://tenor.com/bamgsJBtcep.gif)
+![nagi Bot](https://files.catbox.moe/ruoh2w.mp4)
 
 > **Nota importante:** ⚠️ Actualmente no compatible con Termux.
 
