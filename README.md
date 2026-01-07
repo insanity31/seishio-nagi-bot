@@ -1,6 +1,6 @@
 # nagi Bot ⚽
 
-![nagi](https://optishield.uk/RDRnagi.gif)
+![nagi](https://optishield.uk/nagi.gif)
 
 > **Nota importante:** ⚠️ Actualmente no compatible con Termux.
 
