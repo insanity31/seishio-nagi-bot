@@ -1,25 +1,48 @@
 # nagi Bot ⚽
 
-![nagi Bot](https://tenor.com/bamgsJBtcep.gif)
+![nagi Bot Banner](https://tenor.com/bamgsJBtcep.gif)
 
-> **Nota importante:** ⚠️ No disponible en Termux aún.
+> **Nota importante:** ⚠️ Actualmente no compatible con Termux.
 
-Un bot para WhatsApp perezozo y que causa asombro a sus rivales con su control del balón. cada comando es una pieza del rompecabezas que hace que tus chats aburridos sean mas interesantes ¿verdad isagi?.
+Un bot para WhatsApp perezoso pero impresionante, que domina el balón en tus conversaciones como un verdadero maestro del fútbol. Cada comando es una jugada preparada que convierte chats aburridos en experiencias divertidas. ¿Verdad que sí, Isagi?
 
-## ✨ Características
+## ✨ Características Principales
 
-- **Creación de stickers** - Convierte imágenes y videos en stickers al instante
-- **Más funciones** - Proximamente
+### 🎨 **Creación de Stickers**
+- Convierte imágenes en stickers al instante
+- Soporte para videos/GIF a stickers
+- Personalización de stickers con texto
+- Recorte automático y ajuste de calidad
 
-- **Fácil de usar** - Comandos simples e intuitivos
+### 🎮 **Entretenimiento y Juegos**
+- Sistema de niveles y experiencia
+- Minijuegos interactivos
+- Memes y contenido divertido
+- Respuestas inteligentes y graciosas
 
-## 🚀 Instalación
+### 🛠️ **Utilidades**
+- Descarga de contenido multimedia
+- Búsqueda de información
+- Recordatorios y alarmas
+- Traducciones rápidas
 
-*nagi aun esta entrenando... La compatibilidad con Termux llegará en futuras actualizaciones.*
+### ⚙️ **Administración**
+- Modera grupos automáticamente
+- Sistema de bienvenida personalizable
+- Filtro de spam y enlaces
+- Registro de actividades
 
-## ⚽ Sobre nagi 
+## 📋 Requisitos del Sistema
 
-Nagi es más que un bot, es un amigo que trae diversión y utilidades a tus conversaciones. Cada comando lleva tiempo de preparación espero les guste el bot ❤️.
+- Node.js v16 o superior
+- NPM v8 o superior
+- Una cuenta de WhatsApp activa
+- Conexión a Internet estable
+- Al menos 1GB de RAM libre
 
----
-*"No necesito comprensión. Sólo necesito el balón y la portería" - nagi Bot*
+## 🚀 Instalación Rápida
+
+1. **Clona el repositorio:**
+```bash
+git clone https://github.com/tuusuario/nagi-bot.git
+cd nagi-bot
