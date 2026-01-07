@@ -1,4 +1,4 @@
-# nagi Bot ⚽
+# ｡･ﾟﾟ･  🍃  Nagi Seishiro  💤  ･ﾟﾟ･｡
 
 ![nagi](https://i.imgur.com/UiVKWxz.jpeg)
 
