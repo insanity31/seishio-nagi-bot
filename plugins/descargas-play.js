@@ -35,7 +35,7 @@ const handler = async (m, { conn, text, command }) => {
   }
 
   try {
-    if (!text.trim()) return conn.reply(m.chat, `🌸 Por favor, ingresa el nombre de la música a descargar.`, m)
+    if (!text.trim()) return conn.reply(m.chat, `⚽ Por favor, ingresa el nombre de la música que Nagi debe descargar.`, m)
 
     let videoIdToFind = text.match(youtubeRegexID)
     let ytSearch = await yts(videoIdToFind ? 'https://youtu.be/' + videoIdToFind[1] : text)
@@ -46,14 +46,14 @@ const handler = async (m, { conn, text, command }) => {
     }
 
     ytSearch = ytSearch.all?.[0] || ytSearch.videos?.[0] || ytSearch
-    if (!ytSearch || ytSearch.length === 0) return m.reply('✧ No se encontraron resultados para tu búsqueda.')
+    if (!ytSearch || ytSearch.length === 0) return m.reply('❌ Nagi no encontró resultados para esa jugada.')
 
     let { title, thumbnail, timestamp, views, ago, url, author } = ytSearch
     const vistas = formatViews(views)
     const canalLink = author?.url || 'Desconocido'
 
     const infoMessage = `
-🌸 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 | 𝙒𝙖𝙜𝙪𝙧𝙞 𝘽𝙤𝙩
+⚽ 𝗬𝗼𝘂𝗧𝘂𝗯𝗲 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 | 𝗡𝗮𝗴𝗶 𝗦𝗲𝗶𝘀𝗵𝗶𝗿𝗼 𝗕𝗼𝘁
 
 ━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -65,7 +65,7 @@ const handler = async (m, { conn, text, command }) => {
 📺 𝗖𝗮𝗻𝗮𝗹: ${canalLink}
 
 ━━━━━━━━━━━━━━━━━━━━━━━
-🌸 𝗣𝗿𝗲𝗽𝗮𝗿𝗮𝗻𝗱𝗼 𝘁𝘂 𝗮𝗿𝗰𝗵𝗶𝘃𝗼...
+⚽ 𝗡𝗮𝗴𝗶 𝗲𝘀𝘁𝗮́ 𝗽𝗿𝗲𝗽𝗮𝗿𝗮𝗻𝗱𝗼 𝘁𝘂 𝗮𝗿𝗰𝗵𝗶𝘃𝗼...
 `
 
     const thumb = (await conn.getFile(thumbnail))?.data
@@ -106,7 +106,7 @@ const handler = async (m, { conn, text, command }) => {
           ptt: false
         }, { quoted: m })
       } catch (e) {
-        return conn.reply(m.chat, `🌸 ¡Fallo en la descarga de audio! ${e.message}`, m)
+        return conn.reply(m.chat, `❌ ¡Nagi falló la descarga de audio! ${e.message}`, m)
       }
     } else if (['play2', 'ytv', 'ytmp4'].includes(command)) {
       try {
@@ -117,14 +117,14 @@ const handler = async (m, { conn, text, command }) => {
           mimetype: 'video/mp4'
         }, { quoted: m })
       } catch (e) {
-        return conn.reply(m.chat, `🌸 ¡Fallo en la descarga de video! ${e.message}`, m)
+        return conn.reply(m.chat, `❌ ¡Nagi falló la descarga de video! ${e.message}`, m)
       }
     } else {
-      return conn.reply(m.chat, '✧︎ Comando no reconocido.', m)
+      return conn.reply(m.chat, '❌ Comando no reconocido por Nagi.', m)
     }
 
   } catch (error) {
-    return m.reply(`⚠︎ Ocurrió un error: ${error.message}`)
+    return m.reply(`❌ Nagi no pudo completar la jugada: ${error.message}`)
   }
 }
 
