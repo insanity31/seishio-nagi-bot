@@ -1,7 +1,7 @@
 let handler = async (m, { conn, usedPrefix, command, args, mentionedJid }) => {
   // Verificar si es el dueño
   if (m.sender !== global.opts.owner) {
-    return m.reply('❌ Este comando es solo para el dueño del bot.')
+    return m.reply('❌ Este comando es solo para el dueño de Nagi Bot.')
   }
   
   const formatNumber = (num) => new Intl.NumberFormat('es-ES').format(num)
@@ -31,7 +31,7 @@ let handler = async (m, { conn, usedPrefix, command, args, mentionedJid }) => {
     
     if (!targetUser.economy) {
       targetUser.economy = {
-        waguri: 1000,
+        coins: 1000,
         bank: 0,
         bankLimit: 10000,
         lastDaily: 0,
@@ -53,13 +53,13 @@ let handler = async (m, { conn, usedPrefix, command, args, mentionedJid }) => {
       }
     }
     
-    targetUser.economy.waguri += amount
+    targetUser.economy.coins += amount
     
     await m.reply(
       `✅ *COINS AÑADIDOS*\n\n` +
       `👤 Usuario: @${targetJid.split('@')[0]}\n` +
-      `💰 Cantidad: ${formatNumber(amount)} WC\n` +
-      `💳 Nuevo saldo: ${formatNumber(targetUser.economy.waguri)} WC`
+      `💰 Cantidad: ${formatNumber(amount)} coins\n` +
+      `💳 Nuevo saldo: ${formatNumber(targetUser.economy.coins)} coins`
     )
     
     return
@@ -88,14 +88,14 @@ let handler = async (m, { conn, usedPrefix, command, args, mentionedJid }) => {
       return m.reply('❌ Este usuario no tiene cuenta económica.')
     }
     
-    const actualAmount = Math.min(amount, targetUser.economy.waguri)
-    targetUser.economy.waguri -= actualAmount
+    const actualAmount = Math.min(amount, targetUser.economy.coins)
+    targetUser.economy.coins -= actualAmount
     
     await m.reply(
       `✅ *COINS REMOVIDOS*\n\n` +
       `👤 Usuario: @${targetJid.split('@')[0]}\n` +
-      `💰 Cantidad: ${formatNumber(actualAmount)} WC\n` +
-      `💳 Nuevo saldo: ${formatNumber(targetUser.economy.waguri)} WC`
+      `💰 Cantidad: ${formatNumber(actualAmount)} coins\n` +
+      `💳 Nuevo saldo: ${formatNumber(targetUser.economy.coins)} coins`
     )
     
     return
@@ -126,8 +126,8 @@ let handler = async (m, { conn, usedPrefix, command, args, mentionedJid }) => {
     
     if (!targetUser.economy) {
       targetUser.economy = {
-        waguri: 1000,
-        bank: 0,
+        nagi: 1000,
+        bank: 50,
         bankLimit: 10000,
         lastDaily: 0,
         lastWork: 0,
@@ -136,7 +136,7 @@ let handler = async (m, { conn, usedPrefix, command, args, mentionedJid }) => {
         inventory: [],
         robberyCooldown: 0,
         inJail: false,
-        jailTime: 0,
+        jailTime: 60,
         robberySuccess: 0,
         robberyFails: 0,
         protected: false,
@@ -148,12 +148,12 @@ let handler = async (m, { conn, usedPrefix, command, args, mentionedJid }) => {
       }
     }
     
-    targetUser.economy.waguri = amount
+    targetUser.economy.coins = amount
     
     await m.reply(
       `✅ *BALANCE ESTABLECIDO*\n\n` +
       `👤 Usuario: @${targetJid.split('@')[0]}\n` +
-      `💰 Nuevo balance: ${formatNumber(amount)} WC`
+      `💰 Nuevo balance: ${formatNumber(amount)} coins`
     )
     
     return
@@ -178,7 +178,7 @@ let handler = async (m, { conn, usedPrefix, command, args, mentionedJid }) => {
     
     // Resetear a valores iniciales
     targetUser.economy = {
-      waguri: 1000,
+      coins: 1000,
       bank: 0,
       bankLimit: 10000,
       lastDaily: 0,
@@ -203,7 +203,7 @@ let handler = async (m, { conn, usedPrefix, command, args, mentionedJid }) => {
       `✅ *ECONOMÍA RESETEADA*\n\n` +
       `👤 Usuario: @${targetJid.split('@')[0]}\n` +
       `🔄 Todos los datos económicos reiniciados.\n` +
-      `💰 Saldo inicial: 1,000 WC`
+      `💰 Saldo inicial: 1,000 coins`
     )
     
     return
@@ -213,7 +213,7 @@ let handler = async (m, { conn, usedPrefix, command, args, mentionedJid }) => {
   if (command === 'ecoall') {
     if (!args[0]) {
       return m.reply(
-        `💰 *DAR A TODOS*\n\n` +
+        `💰 *DAR COINS A TODOS*\n\n` +
         `Uso: ${usedPrefix}ecoall <cantidad>\n` +
         `Ejemplo: ${usedPrefix}ecoall 500\n\n` +
         `⚠️ Dará la cantidad a TODOS los usuarios.`
@@ -234,16 +234,16 @@ let handler = async (m, { conn, usedPrefix, command, args, mentionedJid }) => {
     
     Object.entries(global.db.data.users).forEach(([jid, userData]) => {
       if (userData.economy) {
-        userData.economy.waguri += amount
+        userData.economy.coins += amount
         usersAffected++
       }
     })
     
     await m.reply(
-      `✅ *DINERO REPARTIDO*\n\n` +
-      `💰 Cantidad por usuario: ${formatNumber(amount)} WC\n` +
+      `✅ *COINS REPARTIDOS*\n\n` +
+      `💰 Cantidad por usuario: ${formatNumber(amount)} coins\n` +
       `👥 Usuarios afectados: ${usersAffected}\n` +
-      `💰 Total repartido: ${formatNumber(amount * usersAffected)} WC`
+      `💰 Total repartido: ${formatNumber(amount * usersAffected)} coins`
     )
     
     return
@@ -277,7 +277,7 @@ let handler = async (m, { conn, usedPrefix, command, args, mentionedJid }) => {
       `✅ *USUARIO LIBERADO*\n\n` +
       `👤 Usuario: @${targetJid.split('@')[0]}\n` +
       `🔓 Ha sido liberado de la cárcel.\n` +
-      `⚠️ Se le ha perdonado el crimen.`
+      `⚽ Se le ha perdonado la falta.`
     )
     
     return
@@ -285,14 +285,14 @@ let handler = async (m, { conn, usedPrefix, command, args, mentionedJid }) => {
   
   // Si no reconoce el comando
   return m.reply(
-    `👑 *COMANDOS ADMIN ECONÓMIA*\n\n` +
+    `👑 *COMANDOS ADMIN DE NAGI BOT*\n\n` +
     `💰 ${usedPrefix}addcoins @usuario <cantidad>\n` +
     `💰 ${usedPrefix}removecoins @usuario <cantidad>\n` +
     `💰 ${usedPrefix}setbalance @usuario <cantidad>\n` +
     `🔄 ${usedPrefix}reseteco @usuario\n` +
     `👥 ${usedPrefix}ecoall <cantidad>\n` +
     `🔓 ${usedPrefix}liberar @usuario\n\n` +
-    `⚠️ Solo el dueño puede usar estos comandos.`
+    `⚽ Solo el dueño puede usar estos comandos.`
   )
 }
 
