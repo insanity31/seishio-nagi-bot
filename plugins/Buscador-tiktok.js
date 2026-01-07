@@ -9,7 +9,7 @@ const {
 
 let handler = async (message, { conn, text, usedPrefix, command }) => {
   if (!text) {
-    return conn.reply(message.chat, "🌸 Por favor, ingrese un texto para realizar una búsqueda en tiktok.", message, global.rcanal);
+    return conn.reply(message.chat, "⚽ Por favor, ingresa un texto para que Nagi busque en TikTok.", message, global.rcanal);
   }
 
   async function createVideoMessage(url) {
@@ -29,13 +29,13 @@ let handler = async (message, { conn, text, usedPrefix, command }) => {
   }
 
   try {
-    conn.reply(message.chat, '🌸 *ENVIANDO SUS RESULTADOS..*', message, {
+    conn.reply(message.chat, '⚽ *Nagi está buscando tus videos..*', message, {
       contextInfo: { 
         externalAdReply: { 
           mediaUrl: null, 
           mediaType: 1, 
           showAdAttribution: true,
-          title: 'MIKU',
+          title: 'NAGI BOT',
           body: dev,
           previewType: 0, 
           thumbnail: avatar,
@@ -72,7 +72,7 @@ let handler = async (message, { conn, text, usedPrefix, command }) => {
           },
           interactiveMessage: proto.Message.InteractiveMessage.fromObject({
             body: proto.Message.InteractiveMessage.Body.create({
-              text: "🌸 RESULTADO DE: " + text
+              text: "⚽ RESULTADOS DE NAGI PARA: " + text
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
               text: dev
@@ -94,7 +94,7 @@ let handler = async (message, { conn, text, usedPrefix, command }) => {
       messageId: messageContent.key.id
     });
   } catch (error) {
-    conn.reply(message.chat, `⚠︎ *OCURRIÓ UN ERROR:* ${error.message}`, message);
+    conn.reply(message.chat, `❌ *Nagi falló el pase:* ${error.message}`, message);
   }
 };
 
